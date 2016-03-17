@@ -1,0 +1,6 @@
+table th{
+    color: #ffffff;
+    background: #000;
+    border: 1px solid #ffffff;
+}
+table tr:first
