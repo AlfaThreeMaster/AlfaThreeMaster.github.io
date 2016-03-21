@@ -55,5 +55,79 @@ header h1 {
     -webkit-transform: translate3d(0, -2px, 0);
     transform: translate3d(0, -2px, 0);
     background: #ffffff;
-    margin:20px 20px 0px 5px;
+    margin:25px 18px;
+    padding: 20px;
+    border: 1px solid #bbb7ae;
+    box-shadow: 3px 2px 2px 1px #999999;
+    font-family : 黑体,宋体, 'New York';
+}
+
+.param-list h4 {
+    font-size: 14px;
+    color: #999999;
+    font-weight:normal;
+}
+
+.sample {
+    border:1px solid #bbb7ae;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-family : 黑体,宋体, 'New York';
+}
+
+.sample img {
+    width: 150px;
+    height: 125px;
+    margin: 0px 25px;
+}
+
+.table {
+    font-family: verdana,arial,sans-serif;
+    font-size: 15px;
+    color: #333333;
+    border: 1px;
+    border-color: #dedede;
+    border-collapse: collapse;
+    font-family : 黑体,宋体, 'New York';
+    width: 1345px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #333;
+    color: #ffffff;
+    height: 25px;
+    padding-left: 8px;
+}
+
+.table td {
+    padding-left: 8px;
+    background-color: #ffffff;
+    height: 25px;
+}
+
+.information {
+    width: 1040px;
+    margin: 25px 290px 5px;
+    padding: 10px 0 0 10px;
+}
+
+.information tr {
+    height: 30px;
+}
+
+.information td {
+    padding: 10px;
+}
+
+footer {
+    height: 55px;
+    background: #333;
+    text-align: center;
+    line-height: 55px;
+    color: #ffffff;
+    font-family : 黑体,宋体, 'New York';
 }
