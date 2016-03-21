@@ -1,0 +1,71 @@
+.banner *{
+    padding: 0px;
+    margin: 0px;
+}
+.banner {
+    position: relative;
+    width: 550px;
+    margin: 100px auto;
+    height: 300px;
+    overflow: hidden;
+    border: 5px solid #333333;
+
+}
+
+.banner .img {
+    position: absolute;
+    left: 0;
+    margin: 0px;
+    width: 5000px;
+}
+
+.banner li {
+    list-style: none;
+    float: left;
+}
+
+.banner .img li img {
+    width: 550px;
+    height: 300px;
+}
+
+.banner .num {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+}
+.banner .num li{
+    font-size: 0px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background: #888;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.banner .num li.on{
+    background: #f60;
+}
+.banner .btn{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+    text-align: center;
+    font-family: "Songti SC";
+    line-height: 50px;
+    color: #ffffff;
+    font-size: 40px;
+}
+.banner .btn_l{
+    left: 0;
+}
+.banner .btn_r{
+    right: 0;
+}
