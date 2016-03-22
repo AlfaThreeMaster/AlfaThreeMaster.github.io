@@ -42,8 +42,8 @@
         aqi_array.sort(function (pre, next) {
             return pre[1] - next[1];
         });
-        aqi_array.forEach(function (item) {
-            aqi_content += "<li>第一名:" + item[0] + " 空气指数为" + item[1] + "</li>";
+        aqi_array.forEach(function (item,i) {
+            aqi_content += "<li>第"+(i+1)+"名:" + item[0] + " 空气指数为" + item[1] + "</li>";
         });
         aqi_list.innerHTML=aqi_content;
     })();
