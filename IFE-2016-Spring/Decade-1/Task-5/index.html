@@ -2,11 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>零基础HTML及CSS编码（二)</title>
+    <title>零基础HTML及CSS编码（一）</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<div id="content">
+<!--=============网站导航栏==================-->
+<header class="clearfix">
+    <img style="margin-left: 30px" src="assets/img/baidu.png">
+    <ul>
+        <li>
+            <a href="#">导航链接一</a>
+        </li>
+        <li><a href="#">导航链接二</a></li>
+        <li><a href="#">导航链接三</a></li>
+        <li><a href="#">导航链接四</a></li>
+    </ul>
+</header>
 
+<!--==============文章内容==============-->
+<div style="height: 3036px">
+<div class="param-list-left">
+    <h2>文章一级标题</h2>
+    <h3>文章二级标题</h3>
+    <h4>文章作者 文章发表时间</h4>
+    <p style="text-indent: 2em">这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了<br>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了，<br>这是一个很长的段落，这是一个很长的段落，<a
+            href="#">这有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，<strong>这里有个粗体字</strong>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
+    </p>
+    <img src="assets/img/tongliya.png">
+    <p  style="text-indent: 2em">这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了<br>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，<strong>这里有个粗体字</strong>这是一个很长的段落，这是一个很长的段落，<a
+            href="#">这有一个链接点击后打开新窗口链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
+    </p>
 </div>
+<div class="param-list-right">
+    <div>
+        <img src="assets/img/gray.png" style="width: 3px; height: 40px; margin-right: 10px; float: left">
+        <h3 style="padding-top: 9px">这里以后是一个侧栏，这是侧栏的标题</h3>
+    </div>
+    <form>
+        <section class="basic">
+            <table class="information">
+                <tbody>
+                <tr>
+                    <td align="right"><label for="mail_name">请输入邮箱地址：</label></td>
+                    <td><input type="text" id="mail_name" name="mail_name" placeholder="这是一个文本输入框"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="color: #999999">邮箱地址请按要求格式输入</td>
+                </tr>
+                <tr>
+                    <td  align="right"><label for="mail_password">请输入密码：</label></td>
+                    <td><input type="password" id="mail_password" name="mail_password"  placeholder="这是一个文本输入框"/></td>
+                </tr>
+                <tr>
+                    <td  align="right"><label for="remail_password">请重复输入密码：</label></td>
+                    <td><input type="password" id="remail_password" name="remail_password" placeholder="这是一个文本输入框"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td style="color: #999999">密码请为6-16位英文数字</td>
+                </tr>
+                <tr>
+                    <td  align="right"> 性别：</td>
+                    <td><input checked="checked" id="radio1" name="radioset" type="radio" value="Choice_1"/><label for="radio1">男</label>
+                        <input id="radio2" name="radioset" type="radio" value="Choice_2"/><label for="radio2">女</label></td>
+                </tr>
+                <tr>
+                    <td  align="right"><label for="select_choice">城市：</label></td>
+                    <td>
+                        <select id="select_choice" name="select_choice">
+                            <option value="0">北京</option>
+                            <option value="1">天津</option>
+                            <option value="2">上海</option>
+                            <option value="3">重庆</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td  align="right">爱好：</td>
+                    <td>
+                        <input type="checkbox" id="check1" name="checkset" value="1" tabindex="4"/>
+                        <label for="check1">运动</label>
+                        <input type="checkbox" id="check2" name="checkset" value="1" tabindex="4"/>
+                        <label for="check2">艺术</label>
+                        <input type="checkbox" id="check3" name="checkset" value="1" tabindex="4"/>
+                        <label for="check3">科学</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td  align="right">个人描述：</td>
+                    <td>
+                        <textarea style="height: 80px" id="description" name="description" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <input style="width: 345px; height: 45px; background-color: royalblue; border:0; color: #ffffff; border-radius:10px;" type="submit" value="确认提交"/>
+        </section>
+    </form>
+</div>
+<div class="param-list-left">
+    <h2>另一篇文章一级标题</h2>
+    <h3>文章二级标题</h3>
+    <h4>文章作者 文章发表时间</h4>
+    <p  style="text-indent: 2em">这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了<br>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，换行了，<br>这是一个很长的段落，这是一个很长的段落，<a
+            href="#">这有一个链接链接到http://ife.baidu.com</a>这是一个很长的段落，这是一个很长的段落，<strong>这里有个粗体字</strong>这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落，这是一个很长的段落。
+    </p>
+    <img src="assets/img/yangying.png">
+    <ul>
+        <li style="list-style-type: none">列表项目一</li>
+        <li style="list-style-type: none">列表项目二</li>
+        <li style="list-style-type: none">列表项目三</li>
+    </ul>
+</div>
+
+<div class="param-list-left">
+    <h2>图片</h2>
+    <div class="sample">
+        <p>好看的图片</p>
+        <img src="assets/img/lyf1.jpg">
+    </div>
+    <div class="sample">
+        <p>好看的图片</p>
+        <img src="assets/img/lyf2.jpg">
+    </div>
+    <div class="sample">
+        <p>好看的图片</p>
+        <img src="assets/img/ym2.jpg">
+    </div>
+    <div class="sample">
+        <p>好看的图片</p>
+        <img src="assets/img/szj1.jpg">
+    </div>
+    <div class="sample">
+        <p>好看的图片</p>
+        <img src="assets/img/szj2.jpg">
+    </div>
+</div>
+<div class="param-list-left">
+    <h2>最后一篇文章一级标题</h2>
+    <h3>文章二级标题</h3>
+    <h4>文章作者 文章发表时间</h4>
+    <ol>
+        <li>排名1</li>
+        <li>排名2</li>
+        <li>排名3</li>
+    </ol>
+    <p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+    <table class="table" border="1">
+        <tr>
+            <th>表头</th>
+            <th>表头</th>
+            <th>表头</th>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr>
+            <td>表内容单元格</td>
+            <td>表内容单元格</td>
+            <td><a href="#">操作</a></td>
+        </tr>
+        <tr >
+            <td style="background-color:#dedede; color: #333">总计</td>
+            <td style="background-color:#dedede; color: #333; font-weight: bold " colspan=2>1000</td>
+        </tr>
+    </table>
+</div>
+</div>
+<footer>
+    <h4>版权所有©</h4>
+</footer>
 </body>
 </html>
