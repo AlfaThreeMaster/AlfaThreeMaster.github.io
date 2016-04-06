@@ -19,7 +19,6 @@
         var newValue = document.getElementById("bar-value").value;
         if (!newValue) {
             alert("请输入!");
-
         } else if (newValue > 100 || newValue < 10) {
             alert("请输入一个大于10小于100的数字");
         } else if (data.length > 60) {
@@ -43,10 +42,14 @@
     function dealEvent(eventNam, newValue) {
         switch (eventNam) {
             case 'left-in':
-                data.unshift(getValue());
+                if (getValue()) {
+                    data.unshift(getValue());
+                }
                 break;
             case 'right-in':
-                data.push(getValue());
+                if (getValue()) {
+                    data.push(getValue());
+                }
                 break;
             case 'left-out':
                 if (data) {
