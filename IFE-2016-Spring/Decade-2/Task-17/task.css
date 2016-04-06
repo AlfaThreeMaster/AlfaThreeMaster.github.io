@@ -1,0 +1,31 @@
+.aqi-chart-wrap{
+    display: flex;
+    width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    overflow: auto;
+    flex-flow: row wrap ;
+    justify-content: center;
+    align-items: flex-end;
+}
+.aqi-chart-day{
+    margin: 0 5px;
+    height: 200px;
+    width: 10px;
+    background: #00ff00;
+}
+.aqi-chart-week{
+    margin: 0 10px;
+    height: 200px;
+    width: 50px;
+    background: #00ff00;
+}
+
+.aqi-chart-month{
+    margin: 0 20px;
+    height: 200px;
+    width: 100px;
+    background: #00ff00;
+}
+
+
