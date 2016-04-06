@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+<script>
+        var list = document.getElementsByTagName("li");
+        var length = list.length;
+        for (var i = 0; i < length / 2 - 1; i++) {
+            console.log("i===="+i);
+            var temp = list[i].innerHTML;
+            console.log(temp);
+            list[i].innerHTML = list[length - i - 1].innerHTML;
+            list[length - i - 1].innerHTML = temp;
+        }
+    var twoNum = 0;
+    var threeNum = 0;
+    var fiveNum = 0;
+    var total = 0;
+    while (total!= 100) {
+        total = twoNum * 2 + threeNum * 3 + fiveNum * 5;
+//        console.log(total);
+        ++twoNum;
+        ++threeNum;
+        ++fiveNum;
+    }
+    console.log(twoNum-1);
+    console.log(threeNum-1);
+    console.log(fiveNum-1);
+</script>
+</body>
+</html>
