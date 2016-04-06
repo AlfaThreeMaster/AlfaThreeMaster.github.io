@@ -10,20 +10,27 @@
 
 
     container.addEventListener("click", function (e) {
-        var newValue = document.getElementById("bar-value").value;
+        dealEvent(e.target.id);
+    });
 
+
+    //获取输入框数据
+    function getValue() {
+        var newValue = document.getElementById("bar-value").value;
         if (!newValue) {
-            alert("请输入!")
+            alert("请输入!");
+
         } else if (newValue > 100 || newValue < 10) {
             alert("请输入一个大于10小于100的数字");
         } else if (data.length > 60) {
             alert("队列元素最多60个！")
         } else if (isNum.test(newValue)) {
-            dealEvent(e.target.id, newValue);
+            return newValue;
         } else {
             alert("请输入一个数字！");
         }
-    });
+    }
+
 
     //监听队列中元素的点击事件
     blocks.addEventListener("click", function (e) {
@@ -36,16 +43,20 @@
     function dealEvent(eventNam, newValue) {
         switch (eventNam) {
             case 'left-in':
-                data.unshift(newValue);
+                data.unshift(getValue());
                 break;
             case 'right-in':
-                data.push(newValue);
+                data.push(getValue());
                 break;
             case 'left-out':
-                alert(data.shift());
+                if (data) {
+                    alert(data.shift());
+                }
                 break;
             case 'right-out':
-                alert(data.pop());
+                if (data) {
+                    alert(data.pop());
+                }
                 break;
             default:
                 return;
@@ -81,9 +92,9 @@
     };
 
     /*随机生成一组数据*/
-    document.getElementById("random-data").onclick=function(){
-        for(var i=0;i<=20;i++){
-            data[i]=Math.floor(Math.random()*91+9);
+    document.getElementById("random-data").onclick = function () {
+        for (var i = 0; i <= 20; i++) {
+            data[i] = Math.floor(Math.random() * 91 + 9);
         }
         render()
     };
