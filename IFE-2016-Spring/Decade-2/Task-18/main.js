@@ -22,10 +22,10 @@
     });
 
     //监听队列中元素的点击事件
-    blocks.addEventListener("click",function (e) {
+    blocks.addEventListener("click", function (e) {
         var node = e.target;
         var nodeIndex = [].indexOf.call(node.parentNode.children, node);
-        data.splice(nodeIndex,1);
+        data.splice(nodeIndex, 1);
         render()
     });
 
