@@ -184,8 +184,8 @@ function dealMonth(initdata) {
         daySum.push(sum);
     }
     daySum.unshift(0);
-    console.log(dayNum)
-    console.log(daySum)
+    // console.log(dayNum)
+    // console.log(daySum)
     //拆分initdata数据
     for (var k = 1; k < daySum.length && !isNaN(daySum[k]); k++) {
         var currTotal = 0;
