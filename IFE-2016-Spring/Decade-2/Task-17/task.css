@@ -9,7 +9,7 @@
     align-items: flex-end;
 }
 .aqi-chart-day{
-    margin: 0 5px;
+    margin: 0px;
     height: 200px;
     width: 10px;
     background: #00ff00;
