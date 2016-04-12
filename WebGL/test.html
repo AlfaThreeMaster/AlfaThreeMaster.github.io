@@ -19,9 +19,9 @@
         var list = document.getElementsByTagName("li");
         var length = list.length;
         for (var i = 0; i < length / 2 - 1; i++) {
-            console.log("i===="+i);
+            //console.log("i===="+i);
             var temp = list[i].innerHTML;
-            console.log(temp);
+            //console.log(temp);
             list[i].innerHTML = list[length - i - 1].innerHTML;
             list[length - i - 1].innerHTML = temp;
         }

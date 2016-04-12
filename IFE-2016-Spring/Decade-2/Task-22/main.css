@@ -1,0 +1,19 @@
+#main {
+    width: 1200px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+div {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    flex-grow: 1;
+    border: 1px solid #a9a9a9;
+    margin: 20px 10px;
+    background: #ffffff;
+}
+
+.curr {
+    background: blue;
+}
