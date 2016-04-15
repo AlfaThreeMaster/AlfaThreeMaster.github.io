@@ -17,3 +17,7 @@ div {
 .curr {
     background: blue;
 }
+
+#buttons {
+    border: none;
+}

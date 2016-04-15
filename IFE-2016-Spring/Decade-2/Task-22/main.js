@@ -18,7 +18,7 @@
 
 
     //中序遍历
-    function midOrder() {
+    function midOrder(node) {
         if (nodeOperate.returnLeftChild(node)) {
             arguments.callee(nodeOperate.returnLeftChild(node));
         }
@@ -32,7 +32,7 @@
 
 
     //后序遍历
-    function postOrder() {
+    function postOrder(node) {
         if (nodeOperate.returnLeftChild(node)) {
             arguments.callee(nodeOperate.returnLeftChild(node));
         }
@@ -93,9 +93,24 @@
 
     //监听页面中的按钮
     var btns = document.getElementById("buttons");
-    btns.addEventListener("click",function (e) {
-        console.log(e)
-        // switch (e.target)
+    btns.addEventListener("click", function (e) {
+        //console.log(e)
+        switch (e.target.innerText) {
+            case "先序遍历":
+                preOrder(tree);
+                nodeOperate.animate();
+                break;
+            case "中序遍历":
+                midOrder(tree);
+                nodeOperate.animate();
+                break;
+            case "后序遍历":
+                postOrder(tree);
+                nodeOperate.animate();
+                break;
+            default:
+                return;
+        }
     })
 
 
